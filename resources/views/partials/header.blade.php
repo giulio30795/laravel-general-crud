@@ -14,7 +14,7 @@
                         <a class="nav-link" href="{{ route('services.index') }}">Servizi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Aggiungi Servizi</a>
+                        <a class="nav-link" href="{{ route('services.create') }}">Aggiungi Servizi</a>
                     </li>
                 </ul>
             </div>

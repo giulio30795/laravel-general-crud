@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Service;
 
 use Illuminate\Http\Request;
+
 
 class ServiceController extends Controller
 {
@@ -23,7 +25,7 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        //
+        return view('services.create');
     }
 
     /**
@@ -34,7 +36,13 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        $service = new Service();
+        $service->fill($data);
+        $service->save();
+        return redirect()->route('services.index');
+
     }
 
     /**
