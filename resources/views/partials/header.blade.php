@@ -11,7 +11,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Servizi</a>
+                        <a class="nav-link" href="{{ route('services.index') }}">Servizi</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Aggiungi Servizi</a>
