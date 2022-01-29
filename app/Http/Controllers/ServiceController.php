@@ -67,7 +67,10 @@ class ServiceController extends Controller
      */
     public function edit($id)
     {
-        //
+        $service = Service::find($id);
+
+        return view('services.edit' , compact('service'));
+
     }
 
     /**
@@ -79,7 +82,14 @@ class ServiceController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+
+        $service = Service::find($id);
+        $service->update($data);
+
+        return redirect()->route('services.index');
+
+
     }
 
     /**
