@@ -34,9 +34,14 @@
                             <button class="btn btn-warning mx-2">
                                 <a href="{{route('services.edit', $service->id)}}">Modifica</a>
                             </button>
-                            <button class="btn btn-danger">
+
+                            <form action="{{route('services.destroy', $service->id)}}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-danger" type="submit">
                                 Elimina
                             </button>
+                            </form>
                         </td>
                     @endforeach
                 </table>

@@ -89,7 +89,6 @@ class ServiceController extends Controller
 
         return redirect()->route('services.index');
 
-
     }
 
     /**
@@ -100,6 +99,10 @@ class ServiceController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $service = Service::find($id);
+
+        $service->delete();
+
+        return redirect()->route('services.index');
     }
 }
