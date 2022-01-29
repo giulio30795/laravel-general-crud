@@ -2,16 +2,17 @@
 
 @section('content')
     <div class="container">
-        <h1>Dashboard Servizi sito DoulaCristina</h1>
-        <button class="btn btn-success">
-            <a href="{{route('services.create')}}"></a>
-            Aggiungi Servizio
+        <h1 class="my-3">Dashboard Servizi sito DoulaCristina</h1>
+        <button class="btn btn-success my-3">
+            <a class="text-decoration-none text-white" href="{{ route('services.create') }}">
+                Aggiungi Servizio
+            </a>
         </button>
         
         <div class="row">
             <div class="col-12">
                 <table class="table">
-                    <tr>
+                    <tr class="text-center">
                         <th>ID</th>
                         <th>Name</th>
                         <th>Price</th>
@@ -27,12 +28,12 @@
                         </td><td>
                             {{ $service->price }}
                         </td>
-                        <td>
+                        <td class="d-flex justify-content-center">
                             <button class="btn btn-primary">
-                                <a class="text-decoration-none" href="{{route('services.show', $service->id)}}">Vedi Dettagli</a>
+                                <a class="text-decoration-none text-white" href="{{route('services.show', $service->id)}}">Vedi Dettagli</a>
                             </button>
                             <button class="btn btn-warning mx-2">
-                                <a href="{{route('services.edit', $service->id)}}">Modifica</a>
+                                <a class="text-decoration-none text-white" href="{{route('services.edit', $service->id)}}">Modifica</a>
                             </button>
 
                             <form action="{{route('services.destroy', $service->id)}}" method="POST">
