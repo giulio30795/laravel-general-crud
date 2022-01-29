@@ -1,0 +1,14 @@
+header {
+  background-color: #FCD0E8;
+}
+header .logo-home {
+  border-radius: 50px;
+  width: 80px;
+}
+
+footer {
+  background-color: #FCD0E8;
+}
+footer img {
+  width: 100px;
+}
