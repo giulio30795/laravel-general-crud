@@ -29,13 +29,13 @@
                         </td>
                         <td>
                             <button class="btn btn-primary">
-                                View Details
+                                <a class="text-decoration-none" href="{{route('services.show', $service->id)}}">Vedi Dettagli</a>
                             </button>
                             <button class="btn btn-warning mx-2">
-                                Edit
+                                <a href="{{route('services.edit', $service->id)}}">Modifica</a>
                             </button>
                             <button class="btn btn-danger">
-                                Delete
+                                Elimina
                             </button>
                         </td>
                     @endforeach
