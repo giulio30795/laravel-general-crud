@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('content')
-<div class="container py-5">
+<div class="container flex-grow-1 py-5">
     <h1>Modifica il Servizio</h1>
     <form action="{{route('services.update', $service->id)}}" method="POST">
         @csrf

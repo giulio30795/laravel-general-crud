@@ -1,3 +1,16 @@
+body {
+  background-color: #f5eaef;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Bodoni Moda", serif;
+}
+
+.container img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
 header {
   background-color: #FCD0E8;
 }

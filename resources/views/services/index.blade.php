@@ -1,8 +1,8 @@
 @extends('layout.main')
 
 @section('content')
-    <div class="container">
-        <h1 class="my-3">Dashboard Servizi sito DoulaCristina</h1>
+    <div class="container flex-grow-1">
+        <h1 class="my-3 text-center">Dashboard Servizi sito DoulaCristina</h1>
         <button class="btn btn-success my-3">
             <a class="text-decoration-none text-white" href="{{ route('services.create') }}">
                 Aggiungi Servizio
@@ -25,7 +25,8 @@
                         </td>
                         <td>
                             {{ $service->name }}
-                        </td><td>
+                        </td>
+                        <td class="text-center">
                             {{ $service->price }}
                         </td>
                         <td class="d-flex justify-content-center">

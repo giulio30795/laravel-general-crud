@@ -1,5 +1,7 @@
 @extends('layout.main')
 
 @section('content')
-    MY HOMEPAGE
+    <div class="container flex-grow-1">
+        MY HOMEPAGE
+    </div>
 @endsection

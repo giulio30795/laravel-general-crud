@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('content')
-    <div class="container py-5">
+    <div class="container py-5 flex-grow-1">
         <form action="{{route('services.store')}}" method="POST">
             @csrf
             <div>
@@ -11,7 +11,7 @@
 
             <div>
                 <label for="description" class="form-label">Description</label>
-                <textarea id="description" name="description" class="form-control"></textarea>
+                <textarea id="description" rows="9" name="description" class="form-control"></textarea>
             </div>
 
             <div>
