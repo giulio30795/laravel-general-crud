@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   height: 100vh;
   font-family: "Bodoni Moda", serif;
+  overflow: auto;
 }
 
 .container img {
